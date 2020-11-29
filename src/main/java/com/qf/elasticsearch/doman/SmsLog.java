@@ -1,9 +1,13 @@
 package com.qf.elasticsearch.doman;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 /**
  * @Author chenzhongjun
+ * es默认情况下会自动帮我们把不存在的 mapping 补全
  * @Date 2020/11/29
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)  //传输时只传输不为null的字段
 public class SmsLog {
 
 

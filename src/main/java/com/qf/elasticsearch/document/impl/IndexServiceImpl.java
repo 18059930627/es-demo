@@ -52,6 +52,10 @@ public class IndexServiceImpl implements IndexService {
 
     }
 
+    /**
+     * 删除索引
+     * @param indexName 索引名字
+     */
     @Override
     public void deleteIndex(String indexName) {
         if(existIndex(indexName)){
