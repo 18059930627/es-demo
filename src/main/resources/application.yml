@@ -1,0 +1,15 @@
+#日志信息
+logging:
+  path: ./logs
+
+#es相关配置
+spring:
+  data:
+    elasticsearch:
+      hosts: 192.168.40.188
+      port: 9000
+      connectTimeOut: 1000
+      socketTimeOut: 30000
+      connectRequestTimeOut: 500
+      maxConnectNum: 100
+      maxConnectPerRoute: 100
