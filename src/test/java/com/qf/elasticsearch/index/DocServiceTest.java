@@ -31,5 +31,6 @@ public class DocServiceTest {
         smsLog.setCorpName("");
 
         docService.addDoc(indexName, typeName, JSONUtils.objectToJson(smsLog));
+
     }
 }
